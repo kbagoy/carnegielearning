@@ -30,13 +30,58 @@ body {
   color:white;
 }
 
-.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
-    background-color: #00ACC1;
-    border-color: #00ACC1;
+/*Modals*/
+.modal-header, .modal-footer {
+  border: none;
 }
+
+.modal-content {
+  border-radius: 0;
+  background-color: #032F3B;
+  color: white;
+}
+
+.close {
+    float: right;
+    font-size: 48px;
+    font-weight: 100;
+    line-height: .5;
+    color: #fff;
+    text-shadow: none;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+/*Misc Color Updates*/
+
+
 
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
     background-color: #00ACC1;
+}
+
+/*List Groups */
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    background-color: #881A51;
+    border-color: #881A51;
+}
+
+a.list-group-item, button.list-group-item {
+    color: #fff;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background: none;
+    border: none;
+}
+
+a.list-group-item .list-group-item-heading, button.list-group-item .list-group-item-heading {
+    color: #fff;
 }
 
 /* Nav */
