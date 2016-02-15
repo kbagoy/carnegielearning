@@ -30,6 +30,70 @@ body {
   color:white;
 }
 
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    background-color: #00ACC1;
+    border-color: #00ACC1;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+    background-color: #00ACC1;
+}
+
+/* Nav */
+.navbar {
+    min-height: 70px;
+    position: fixed;
+    background-color: rgba(03, 47, 59, .8);
+    z-index: 1;
+    color: #fff;
+    padding: none;
+}
+
+.navbar-brand {
+    line-height: 45px;
+}
+
+.navbar .badge {
+    margin: -18px -10px 0;
+    z-index: -10;
+}
+
+nav ul {
+    float: right;
+    padding-right: 5%;
+    margin: 2em auto;
+}
+
+nav li {
+    display: inline;
+    padding: .8em;
+}
+
+nav li a,
+nav li a:visited {
+    text-decoration: none;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+nav li a:hover {
+    color: #00ACC1;
+
+}
+
+nav li .img-circle {
+  margin-top: -10px;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: #066079;
+    background-size: 100%;
+}
+
+/*Badges*/
+.badge {
+  background-color: #00ACC1;
+}
 /*Button Styles*/
 .button {
   text-decoration: none;
@@ -104,33 +168,48 @@ body {
     background-color: #F19320;
 }
 
+/*alerts*/
+.alert-success {
+    color: #3c763d;
+    background-color: #e7f2d9;
+}
+
+.alert-warning {
+  background-color: #F2F8E9;
+}
+
+.alert-info {
+  background-color: #e6fcff;
+}
+
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 0px;
+}
+
 /* Card Styles */
 
 .card {
   background: #fff;
-  display: block;
   padding: 2em;
-  height: auto;
   margin: 2rem;
-}
-
-.card-sm {
-  float: left;
-  height: 300px;
-  position: relative;
-  width: 300px;
+  min-height: 100px;
 }
 
 .card-color {
   float: left;
-  height: 100px;
   position: relative;
   width: 100px;
 }
 
 .cardholder {
   background-color: #ecf0f1;
-  display: inline-block;
+  width: auto;
+  min-height: 400px;
+  display: block;
 }
 
 .card-1 {
