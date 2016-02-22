@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Carnegie MATHia X Styleguide</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Custom styles for this template -->
@@ -34,7 +34,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Mathia X</a>
+                <a class="navbar-brand" href="#">MATHia X</a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav pull-right">
@@ -42,9 +42,19 @@
                     <li><a href="#"><i class="fa fa-calendar"></i> calendar</a></li>
                     <li><a href="#"><span class="badge">3</span><i class="fa fa-trophy"></i> Badges</a></li>
                     <li><a href="#"><span class="badge">14</span><i class="fa fa-envelope-o"></i> Messages</a></li>
-                    <li><a href="#">Resource Center</a></li>
                     <li><a href="#">Glossary</a></li>
-                    <li><a href="#"><img src="assets/alien.png" class="img-circle"> Maria Hernandez</a></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="assets/alien.png" class="img-circle"> Maria Hernandez  <i class="fa fa-caret-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <a href="#"><li><i class="fa fa-life-ring"></i>  Resource Center</li></a>
+                        <li role="separator" class="divider"></li>
+                        <a href="#"><li><i class="fa fa-wrench"></i>  Account Settings</li></a>
+                        <li role="separator" class="divider"></li>
+                        <a href="#"><li><i class="fa fa-user"></i>  My Profile</li></a>
+                        <li role="separator" class="divider"></li>
+                        <a href="#"><li><i class="fa fa-sign-out"></i>  Logout</li></a>
+                      </ul>
+                    </li>
+
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -55,9 +65,9 @@
 
   <section id="intro">
       <div class="hero white-text">
-          <h1>Bootstrap starter template</h1>
-          <p class="lead">Use this document as a way to quickly start any new project.
-              <br> All you get is this text and a mostly barebones HTML document.</p>
+          <h1>MATHia X StyleGuide</h1>
+          <p class="lead">This is a base-style guide for the MATHia X Redesign.
+              <br> This site utilizes Bootstrap 3.</p>
       </div>
       <div class="row white-text">
           <div class="col-md-5 col-md-offset-1">
@@ -482,9 +492,30 @@
         </div>
       </div>
 
+      <!-- Button trigger modal -->
+      <button type="button" class="button btn-teal" data-toggle="modal" data-target="#largeModal">
+        Launch Larger Modal
+      </button>
 
+      <!-- Modal -->
+      <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <h2>This is a Large Modal</h2>
+              <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
 
+            </div>
+        </div>
+      </div>
 
+  </section>
+  <section id="videos" class="card card-5">
+    <div class="page-header">
+          <h1>Videos</h1>
+    </div>
+    <h3>Splash Video <small>Reload Page to Preview</small></h3>
+    <iframe src="splash-2.html"></iframe>
   </section>
 
   
@@ -496,6 +527,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="assets/splash-2.js"></script>
 
 </body>
 

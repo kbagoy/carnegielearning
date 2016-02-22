@@ -7,6 +7,14 @@ body {
   color: #043F4F;
 }
 
+iframe {
+  height: 420px;
+  width: 780px;
+  text-align: center;
+  frameborder: 0;
+
+}
+
 .page-header {
   margin-top: 20px;
 }
@@ -88,7 +96,7 @@ a.list-group-item .list-group-item-heading, button.list-group-item .list-group-i
 .navbar {
     min-height: 70px;
     position: fixed;
-    background-color: rgba(03, 47, 59, .8);
+    background-color: rgba(03, 47, 59, .9);
     z-index: 1;
     color: #fff;
     padding: none;
@@ -96,13 +104,30 @@ a.list-group-item .list-group-item-heading, button.list-group-item .list-group-i
 
 .navbar-brand {
     line-height: 45px;
+    font-size: xx-large;
 }
 
 .navbar .badge {
-    margin: -18px -10px 0;
-    z-index: -10;
+    margin: -10px -15px 0;
+    z-index: 1;
+    position: fixed;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .nav>li>a:focus, .nav>li>a:hover {
+    background-color: #00ACC1;
+    color: #fff;
+}
+.navbar .dropdown-menu {
+  background-color: rgba(03, 47, 59, .9);
+}
+.navbar .dropdown-menu li {
+    display: inline-block;
 }
 
+.navbar .dropdown-menu .divider {
+  width: 100%;
+  padding: 0;
+
+}
 nav ul {
     float: right;
     padding-right: 5%;
