@@ -9,7 +9,7 @@ lib.properties = {
 	fps: 12,
 	color: "#032F3B",
 	manifest: [
-		{src:"images/spCarnegieLogo.png?1456850746602", id:"spCarnegieLogo"}
+		{src:"assets/images/spCarnegieLogo.png?1456850746602", id:"spCarnegieLogo"}
 	]
 };
 
